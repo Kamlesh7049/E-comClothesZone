@@ -10,7 +10,7 @@ const ProductDetail=()=>{
     const dispatch= useDispatch();
 
     const loadData=()=>{
-        let api="https://e-comclotheszone.onrender.com/product/productdetail";
+        let api="https://e-comclotheszone-2.onrender.com/product/productdetail";
         axios.post(api,{id:proid}).then((res)=>{
             setMydata(res.data);
         })

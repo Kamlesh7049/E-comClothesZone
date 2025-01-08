@@ -14,7 +14,7 @@ const navigate= useNavigate();
 
     const handleChange=(e)=>{ 
         setMyPro(e.target.value);
-        let api=`https://e-comclotheszone.onrender.com/product/searchproduct/?product=${mypro}`;
+        let api=`https://e-comclotheszone-2.onrender.com/product/searchproduct/?product=${mypro}`;
            axios.get(api).then((res)=>{
             setMydata(res.data);
             console.log(res.data);

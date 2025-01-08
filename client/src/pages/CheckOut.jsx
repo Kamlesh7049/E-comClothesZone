@@ -25,7 +25,7 @@ const CheckOut=()=>{
       order_id: data.id,
       handler: async (response) => {
         try {
-          const verifyURL = "https://e-comclotheszone.onrender.com/api/payment/verify";
+          const verifyURL = "https://e-comclotheszone-2.onrender.com/api/payment/verify";
           const {data} = await axios.post(verifyURL,response);
         } catch(error) {
           console.log(error);
@@ -50,7 +50,7 @@ const CheckOut=()=>{
    )
     
     try {
-      const orderURL = "https://e-comclotheszone.onrender.com/api/payment/orders";
+      const orderURL = "https://e-comclotheszone-2.onrender.com/api/payment/orders";
       const {data} = await axios.post(orderURL,{amount: mypro.price});
       console.log(data);
       initPay(data.data);

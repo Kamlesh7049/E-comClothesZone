@@ -30,7 +30,7 @@ const InsertProduct=()=>{
       console.log('Image uploaded:', response.data);
       console.log('Image uploaded:', response.data.url);
 
-      let api1="https://e-comclotheszone.onrender.com/product/productsave";
+      let api1="https://e-comclotheszone-2.onrender.com/product/productsave";
 
     axios.post(api1,{...input, image:response.data.url}).then((res)=>{
        alert("Data save");
