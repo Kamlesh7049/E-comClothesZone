@@ -9,4 +9,4 @@ route.post("/usercheck", AdminController.adminDataCheck);
 module.exports=route;
 
 
-// 
+// admin changes
